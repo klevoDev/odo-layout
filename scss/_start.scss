@@ -41,6 +41,8 @@
     }
 
     &__subscribe {
+        padding: 16px 24px;
+        border-radius: 20px;
     }
 
     &__wrap-image {
@@ -51,12 +53,25 @@
         &::before {
             content: "";
             position: absolute;
-            top: 50px;
-            left: -400px;
+            top: 70px;
+            left: -350px;
 
             width: 511px;
             height: 508px;
             background: url("./../img/light.png") 0 0 / contain no-repeat;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+
+            left: 0;
+            bottom: -70px;
+
+            width: 706px;
+            height: 178px;
+            z-index: -1;
+            background: url("./../img/shadow.png") 0 0 / contain no-repeat;
         }
     }
 

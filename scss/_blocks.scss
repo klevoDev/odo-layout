@@ -14,9 +14,6 @@
     box-sizing: content-box;
 }
 
-.logo {
-}
-
 .telegram {
     position: relative;
 
@@ -50,4 +47,15 @@
     background: $colorWhite;
     border-radius: 12px;
     color: $colorGarkBlue;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: $colorGarkBlue;
+
+    padding: 10px 16px;
+    border: 1px solid #151f2d;
+    border-radius: 16px;
 }
