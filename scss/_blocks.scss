@@ -1,0 +1,53 @@
+.wrapper {
+    margin: 30px 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1312px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
+.logo {
+}
+
+.telegram {
+    position: relative;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    padding-left: 25px;
+
+    color: $colorGrey;
+
+    transition: all 0.3s ease 0s;
+
+    &::before {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        font-size: 13px;
+    }
+
+    &:hover {
+        color: $colorGarkBlue;
+    }
+}
+
+.subscribe {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+
+    padding: 8px 16px;
+    background: $colorWhite;
+    border-radius: 12px;
+    color: $colorGarkBlue;
+}

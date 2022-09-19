@@ -1,0 +1,27 @@
+// * ===== fonts ===== * //
+@import "_iconfont";
+@import "_fonts";
+
+// * ===== null ===== * //
+@import "_variables";
+@import "_nullstyle";
+
+body {
+    font-family: $fontCenturyGothic;
+    background: #e1e8f4;
+}
+
+// * ===== bem blocks ===== * //
+@import "_blocks";
+
+// * ===== header ===== * //
+@import "_header";
+
+// * ===== main ===== * //
+@import "_page";
+
+// * ===== all sections ===== * //
+@import "_start";
+
+// * ===== footer ===== * //
+@import "_footer";

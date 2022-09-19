@@ -1,0 +1,54 @@
+.footer {
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__wrap-logo {
+    }
+
+    &__logo {
+    }
+
+    &__nav {
+        margin-left: 56px;
+    }
+
+    &__nav-list {
+        display: flex;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    &__item {
+        margin-left: 40px;
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+    }
+
+    &__link {
+        color: $colorGrey;
+
+        color: #6e85ab;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            color: $colorGarkBlue;
+        }
+    }
+
+    &__subscribe-list {
+        display: flex;
+        margin-left: auto;
+    }
+
+    &__telegram {
+    }
+
+    &__subscribe {
+    }
+}

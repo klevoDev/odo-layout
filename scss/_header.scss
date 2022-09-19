@@ -1,0 +1,56 @@
+.header {
+    margin-bottom: 45px;
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__wrap-logo {
+    }
+
+    &__logo {
+    }
+
+    &__nav {
+        margin-left: 56px;
+    }
+
+    &__nav-list {
+        display: flex;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    &__item {
+        &:last-child {
+            margin-left: 40px;
+        }
+    }
+
+    &__link {
+        color: $colorGrey;
+
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            color: $colorGarkBlue;
+        }
+    }
+
+    &__subscribe-list {
+        display: flex;
+        margin-left: auto;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 143%;
+    }
+
+    &__telegram {
+    }
+
+    &__subscribe {
+    }
+}

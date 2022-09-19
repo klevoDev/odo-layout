@@ -1,0 +1,22 @@
+// Converter ttf to woff & woff2: https://transfonter.org
+// local google fonts: https://google-webfonts-helper.herokuapp.com/fonts
+
+@mixin font($fontFamily, $fileName, $fontWeight, $fontStyle) {
+    @font-face {
+        font-display: swap;
+        font-family: $fontFamily;
+        src: url("./../fonts/#{$fileName}.woff2") format("woff2"), url("./../fonts/#{$fileName}.woff") format("woff");
+        font-weight: #{$fontWeight};
+        font-style: #{$fontStyle};
+    }
+}
+@include font("Gilroy", "Gilroy-Regular", "400", "normal");
+@include font("Gilroy", "Gilroy-Bold", "700", "normal");
+
+// Include font:
+// @include font("Lato", "LatoRegular", "400", "normal");
+
+// Examples:
+// @include font("BebasNeue", "BebasNeueRegular", "400", "italic");
+// @include font("Lato", "LatoBold", "700", "normal");
+// @include font("Lato", "LatoRegular", "400", "normal");

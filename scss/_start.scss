@@ -1,0 +1,66 @@
+.start {
+    &__row {
+        display: flex;
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        padding: 0 54px 0 0;
+    }
+
+    &__subheading {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 120%;
+        color: $colorGarkBlue;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 140px;
+        line-height: 107%;
+
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+
+        color: $colorGarkBlue;
+
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-size: 28px;
+        line-height: 143%;
+        color: $colorGarkBlue;
+        max-width: 599px;
+
+        margin-bottom: 32px;
+    }
+
+    &__wrap-subscribe {
+    }
+
+    &__subscribe {
+    }
+
+    &__wrap-image {
+        position: relative;
+
+        flex: 0 0 518px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50px;
+            left: -400px;
+
+            width: 511px;
+            height: 508px;
+            background: url("./../img/light.png") 0 0 / contain no-repeat;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+}

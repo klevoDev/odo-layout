@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("./../fonts/iconfont.woff2") format("woff2"), url("./../fonts/iconfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=_icon-]::before,
+[class*=" _icon-"]::before,
+[class^=_icon-]::after,
+[class*=" _icon-"]::after {
+  font-family: "iconfont";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-back-arrow:before {
+  content: "\e900";
+}
+
+._icon-telegram:before {
+  content: "\e901";
+}
+
+._icon-data-left:before {
+  content: "\e902";
+}
+
+._icon-data-right::after {
+  content: "\e903";
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Gilroy";
+  src: url("./../fonts/Gilroy-Regular.woff2") format("woff2"), url("./../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Gilroy";
+  src: url("./../fonts/Gilroy-Bold.woff2") format("woff2"), url("./../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border-style: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Century Gothic", sans-serif;
+  background: #e1e8f4;
+}
+
+.wrapper {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1312px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+.telegram {
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  padding-left: 25px;
+  color: #6e85ab;
+  transition: all 0.3s ease 0s;
+}
+.telegram::before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  font-size: 13px;
+}
+.telegram:hover {
+  color: #151f2d;
+}
+
+.subscribe {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  padding: 8px 16px;
+  background: #fff;
+  border-radius: 12px;
+  color: #151f2d;
+}
+
+.header {
+  margin-bottom: 45px;
+}
+.header__row {
+  display: flex;
+  align-items: center;
+}
+.header__nav {
+  margin-left: 56px;
+}
+.header__nav-list {
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+.header__item:last-child {
+  margin-left: 40px;
+}
+.header__link {
+  color: #6e85ab;
+  transition: all 0.3s ease 0s;
+}
+.header__link:hover {
+  color: #151f2d;
+}
+.header__subscribe-list {
+  display: flex;
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+}
+.page {
+  flex: 1 1 auto;
+}
+.start__row {
+  display: flex;
+}
+.start__body {
+  flex: 1 1 auto;
+  padding: 0 54px 0 0;
+}
+.start__subheading {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #151f2d;
+}
+.start__heading {
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 107%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #151f2d;
+  margin-bottom: 16px;
+}
+.start__text {
+  font-size: 28px;
+  line-height: 143%;
+  color: #151f2d;
+  max-width: 599px;
+  margin-bottom: 32px;
+}
+.start__wrap-image {
+  position: relative;
+  flex: 0 0 518px;
+}
+.start__wrap-image::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: -400px;
+  width: 511px;
+  height: 508px;
+  background: url("./../img/light.png") 0 0/contain no-repeat;
+}
+.start__image {
+  max-width: 100%;
+}
+
+.footer__row {
+  display: flex;
+  align-items: center;
+}
+.footer__nav {
+  margin-left: 56px;
+}
+.footer__nav-list {
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+.footer__item {
+  margin-left: 40px;
+}
+.footer__item:nth-child(1) {
+  margin-left: 0;
+}
+.footer__link {
+  color: #6e85ab;
+  color: #6e85ab;
+  transition: all 0.3s ease 0s;
+}
+.footer__link:hover {
+  color: #151f2d;
+}
+.footer__subscribe-list {
+  display: flex;
+  margin-left: auto;
+}
