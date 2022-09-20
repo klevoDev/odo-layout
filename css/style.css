@@ -483,6 +483,25 @@ body {
   text-align: right;
   margin-top: -30px;
 }
+@media (max-width: 1023px) {
+  .tickets__column {
+    flex: 0 1 45%;
+  }
+}
+@media (max-width: 767px) {
+  .tickets__column {
+    flex: 0 1 80%;
+  }
+}
+@media (max-width: 425px) {
+  .tickets__wrap-company {
+    flex-direction: column;
+  }
+  .tickets__name-company {
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
 .statistics__subheading {
   text-align: center;
   font-weight: 700;
@@ -711,6 +730,25 @@ body {
   background: url("./../img/yan-last.png") 0 0/contain no-repeat;
 }
 
+@media (max-width: 1023px) {
+  .completed__column {
+    flex: 0 1 45%;
+  }
+}
+@media (max-width: 767px) {
+  .completed__column {
+    flex: 0 1 80%;
+  }
+}
+@media (max-width: 425px) {
+  .completed__wrap-company {
+    flex-direction: column;
+  }
+  .completed__name-company {
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
 .blog-list {
   padding: 3px 0 48px;
 }

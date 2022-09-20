@@ -145,3 +145,193 @@
     &__cartoon {
     }
 }
+
+@media (max-width: 1023px) {
+    .tickets {
+        &__row {
+        }
+
+        &__column {
+            // padding: 16px;
+            flex: 0 1 45%;
+        }
+
+        &__item {
+        }
+
+        &__title {
+        }
+
+        &__stack {
+        }
+
+        &__point {
+        }
+
+        &__data-list {
+        }
+
+        &__data-point {
+        }
+
+        &__data-info {
+        }
+
+        &__wrap-company {
+        }
+
+        &__name-company {
+        }
+
+        &__wrap-button {
+        }
+
+        &__button {
+        }
+
+        &__item-shadow {
+        }
+
+        &__title-shadow {
+        }
+
+        &__wrap-img-load {
+        }
+
+        &__wrap-load {
+        }
+
+        &__wrap-cartoon {
+        }
+
+        &__cartoon {
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tickets {
+        &__row {
+        }
+
+        &__column {
+            // padding: 16px;
+            flex: 0 1 80%;
+        }
+
+        &__item {
+        }
+
+        &__title {
+        }
+
+        &__stack {
+        }
+
+        &__point {
+        }
+
+        &__data-list {
+        }
+
+        &__data-point {
+        }
+
+        &__data-info {
+        }
+
+        &__wrap-company {
+        }
+
+        &__name-company {
+        }
+
+        &__wrap-button {
+        }
+
+        &__button {
+        }
+
+        &__item-shadow {
+        }
+
+        &__title-shadow {
+        }
+
+        &__wrap-img-load {
+        }
+
+        &__wrap-load {
+        }
+
+        &__wrap-cartoon {
+        }
+
+        &__cartoon {
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .tickets {
+        &__row {
+        }
+
+        &__column {
+        }
+
+        &__item {
+        }
+
+        &__title {
+        }
+
+        &__stack {
+        }
+
+        &__point {
+        }
+
+        &__data-list {
+        }
+
+        &__data-point {
+        }
+
+        &__data-info {
+        }
+
+        &__wrap-company {
+            flex-direction: column;
+        }
+
+        &__name-company {
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+
+        &__wrap-button {
+        }
+
+        &__button {
+        }
+
+        &__item-shadow {
+        }
+
+        &__title-shadow {
+        }
+
+        &__wrap-img-load {
+        }
+
+        &__wrap-load {
+        }
+
+        &__wrap-cartoon {
+        }
+
+        &__cartoon {
+        }
+    }
+}
