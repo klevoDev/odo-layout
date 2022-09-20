@@ -149,6 +149,7 @@
 @media (max-width: 1023px) {
     .tickets {
         &__row {
+            justify-content: center;
         }
 
         &__column {
@@ -190,6 +191,7 @@
         }
 
         &__item-shadow {
+            display: none;
         }
 
         &__title-shadow {

@@ -56,14 +56,44 @@
 
     &__wrap-img {
         margin-bottom: 32px;
+        max-width: 800px;
     }
 
     &__img {
-        max-width: 800px;
+        max-width: 100%;
         border-radius: 16px;
     }
 
     &__text {
         margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .blog {
+        &__wrap-back {
+        }
+
+        &__back {
+        }
+
+        &__body {
+            padding: 12px 28px;
+        }
+
+        &__subheading {
+        }
+
+        &__title {
+        }
+
+        &__wrap-img {
+        }
+
+        &__img {
+        }
+
+        &__text {
+        }
     }
 }
