@@ -1,10 +1,90 @@
 .completed {
-    &__subheading {
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 143%;
+    .completed {
+        &__row-data {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-        color: $colorGarkBlue;
+        &__subheading {
+            position: relative;
+
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 143%;
+
+            color: $colorGarkBlue;
+
+            padding-right: 80px;
+
+            &::before {
+                position: absolute;
+                top: 10px;
+                right: 40px;
+                font-size: 22px;
+            }
+
+            &::after {
+                position: absolute;
+                top: 10px;
+                right: 0;
+                font-size: 22px;
+            }
+        }
+
+        &__list-data {
+            display: flex;
+        }
+
+        &__left-button {
+        }
+
+        &__left {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: 4px;
+                left: 0;
+                font-size: 16px;
+            }
+        }
+
+        &__wrap-month {
+        }
+
+        &__month {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+
+            color: $colorGarkBlue;
+            padding: 0 30px;
+        }
+
+        &__rigth-button {
+        }
+
+        &__rigth {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                top: 4px;
+                right: 0;
+                font-size: 16px;
+            }
+        }
+
+        &__year {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+
+            color: $colorGrey;
+
+            margin-left: 20px;
+        }
     }
 
     &__row {
@@ -121,155 +201,29 @@
         }
 
         &__column {
-            // padding: 16px;
             flex: 0 1 45%;
-        }
-
-        &__item {
-        }
-
-        &__title {
-        }
-
-        &__stack {
-        }
-
-        &__point {
-        }
-
-        &__data-list {
-        }
-
-        &__data-point {
-        }
-
-        &__data-info {
-        }
-
-        &__wrap-company {
-        }
-
-        &__name-company {
-        }
-
-        &__wrap-button {
-        }
-
-        &__button {
-        }
-
-        &__item-shadow {
-        }
-
-        &__title-shadow {
-        }
-
-        &__wrap-img-load {
-        }
-
-        &__wrap-load {
-        }
-
-        &__wrap-cartoon {
-        }
-
-        &__cartoon {
         }
     }
 }
 
 @media (max-width: 767px) {
     .completed {
-        &__row {
+        &__row-data {
+            flex-direction: column;
+        }
+
+        &__subheading {
+            margin-bottom: 20px;
         }
 
         &__column {
-            // padding: 16px;
             flex: 0 1 80%;
-        }
-
-        &__item {
-        }
-
-        &__title {
-        }
-
-        &__stack {
-        }
-
-        &__point {
-        }
-
-        &__data-list {
-        }
-
-        &__data-point {
-        }
-
-        &__data-info {
-        }
-
-        &__wrap-company {
-        }
-
-        &__name-company {
-        }
-
-        &__wrap-button {
-        }
-
-        &__button {
-        }
-
-        &__item-shadow {
-        }
-
-        &__title-shadow {
-        }
-
-        &__wrap-img-load {
-        }
-
-        &__wrap-load {
-        }
-
-        &__wrap-cartoon {
-        }
-
-        &__cartoon {
         }
     }
 }
 
 @media (max-width: 425px) {
     .completed {
-        &__row {
-        }
-
-        &__column {
-        }
-
-        &__item {
-        }
-
-        &__title {
-        }
-
-        &__stack {
-        }
-
-        &__point {
-        }
-
-        &__data-list {
-        }
-
-        &__data-point {
-        }
-
-        &__data-info {
-        }
-
         &__wrap-company {
             flex-direction: column;
         }
@@ -277,30 +231,6 @@
         &__name-company {
             margin-right: auto;
             margin-bottom: 50px;
-        }
-
-        &__wrap-button {
-        }
-
-        &__button {
-        }
-
-        &__item-shadow {
-        }
-
-        &__title-shadow {
-        }
-
-        &__wrap-img-load {
-        }
-
-        &__wrap-load {
-        }
-
-        &__wrap-cartoon {
-        }
-
-        &__cartoon {
         }
     }
 }
