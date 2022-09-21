@@ -126,15 +126,15 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 143%;
-  padding-left: 25px;
+  padding-left: 24px;
   color: #6e85ab;
   transition: all 0.3s ease 0s;
 }
 .telegram::before {
   position: absolute;
-  top: 4px;
+  top: 1px;
   left: 0;
-  font-size: 13px;
+  font-size: 16px;
 }
 .telegram:hover {
   color: #151f2d;
@@ -362,7 +362,7 @@ body {
   }
   .start__subheading {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
   }
   .start__heading {
     text-align: center;
@@ -412,7 +412,7 @@ body {
 .tickets__stack {
   display: flex;
   flex-wrap: wrap;
-  margin: -4px -4px;
+  margin: -4px;
   margin-bottom: 24px;
 }
 .tickets__point {
@@ -448,18 +448,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.tickets__name-company {
-  position: relative;
-  padding-left: 52px;
-}
-.tickets__name-company::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  background: url("./../img/vk.png") 0 0/contain no-repeat;
+.tickets__span-name {
+  display: inline-block;
+  margin-top: 12px;
 }
 .tickets__item-shadow {
   padding: 24px 0 0 0;
@@ -500,6 +491,9 @@ body {
   }
 }
 @media (max-width: 425px) {
+  .tickets__column {
+    flex: 0 1 100%;
+  }
   .tickets__wrap-company {
     flex-direction: column;
   }
@@ -648,12 +642,12 @@ body {
     padding: 13px 28px 13px 13px;
   }
 }
-.completed .completed__row-data {
+.completed__row-data {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.completed .completed__subheading {
+.completed__subheading {
   position: relative;
   font-weight: 700;
   font-size: 28px;
@@ -661,47 +655,47 @@ body {
   color: #151f2d;
   padding-right: 80px;
 }
-.completed .completed__subheading::before {
+.completed__subheading::before {
   position: absolute;
   top: 10px;
   right: 40px;
   font-size: 22px;
 }
-.completed .completed__subheading::after {
+.completed__subheading::after {
   position: absolute;
   top: 10px;
   right: 0;
   font-size: 22px;
 }
-.completed .completed__list-data {
+.completed__list-data {
   display: flex;
 }
-.completed .completed__left {
+.completed__left {
   position: relative;
 }
-.completed .completed__left::before {
+.completed__left::before {
   position: absolute;
   top: 4px;
   left: 0;
   font-size: 16px;
 }
-.completed .completed__month {
+.completed__month {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
   color: #151f2d;
   padding: 0 30px;
 }
-.completed .completed__rigth {
+.completed__rigth {
   position: relative;
 }
-.completed .completed__rigth::after {
+.completed__rigth::after {
   position: absolute;
   top: 4px;
   right: 0;
   font-size: 16px;
 }
-.completed .completed__year {
+.completed__year {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
@@ -775,19 +769,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.completed__name-company {
-  position: relative;
+.completed__span-name {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 20px;
+  line-height: 150%;
   color: #6e85ab;
-  padding-left: 52px;
-}
-.completed__name-company::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  background: url("./../img/yan-last.png") 0 0/contain no-repeat;
 }
 
 @media (max-width: 1023px) {
@@ -810,6 +797,18 @@ body {
   }
 }
 @media (max-width: 425px) {
+  .completed__column {
+    flex: 0 1 100%;
+  }
+  .completed__subheading {
+    font-size: 20px;
+  }
+  .completed__subheading::before {
+    top: 4px;
+  }
+  .completed__subheading::after {
+    top: 4px;
+  }
   .completed__wrap-company {
     flex-direction: column;
   }

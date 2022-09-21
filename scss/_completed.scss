@@ -1,90 +1,88 @@
 .completed {
-    .completed {
-        &__row-data {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    &__row-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__subheading {
+        position: relative;
+
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 143%;
+
+        color: $colorGarkBlue;
+
+        padding-right: 80px;
+
+        &::before {
+            position: absolute;
+            top: 10px;
+            right: 40px;
+            font-size: 22px;
         }
 
-        &__subheading {
-            position: relative;
-
-            font-weight: 700;
-            font-size: 28px;
-            line-height: 143%;
-
-            color: $colorGarkBlue;
-
-            padding-right: 80px;
-
-            &::before {
-                position: absolute;
-                top: 10px;
-                right: 40px;
-                font-size: 22px;
-            }
-
-            &::after {
-                position: absolute;
-                top: 10px;
-                right: 0;
-                font-size: 22px;
-            }
+        &::after {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            font-size: 22px;
         }
+    }
 
-        &__list-data {
-            display: flex;
-        }
+    &__list-data {
+        display: flex;
+    }
 
-        &__left-button {
-        }
+    &__left-button {
+    }
 
-        &__left {
-            position: relative;
+    &__left {
+        position: relative;
 
-            &::before {
-                position: absolute;
-                top: 4px;
-                left: 0;
-                font-size: 16px;
-            }
-        }
-
-        &__wrap-month {
-        }
-
-        &__month {
-            font-weight: 700;
+        &::before {
+            position: absolute;
+            top: 4px;
+            left: 0;
             font-size: 16px;
-            line-height: 150%;
-
-            color: $colorGarkBlue;
-            padding: 0 30px;
         }
+    }
 
-        &__rigth-button {
-        }
+    &__wrap-month {
+    }
 
-        &__rigth {
-            position: relative;
+    &__month {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
 
-            &::after {
-                position: absolute;
-                top: 4px;
-                right: 0;
-                font-size: 16px;
-            }
-        }
+        color: $colorGarkBlue;
+        padding: 0 30px;
+    }
 
-        &__year {
-            font-weight: 700;
+    &__rigth-button {
+    }
+
+    &__rigth {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: 4px;
+            right: 0;
             font-size: 16px;
-            line-height: 150%;
-
-            color: $colorGrey;
-
-            margin-left: 20px;
         }
+    }
+
+    &__year {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+
+        color: $colorGrey;
+
+        margin-left: 20px;
     }
 
     &__row {
@@ -176,21 +174,15 @@
     }
 
     &__name-company {
-        position: relative;
+    }
+
+    &__span-name {
+        display: inline-block;
+        margin-top: 5px;
+        font-size: 20px;
+        line-height: 150%;
+
         color: $colorGrey;
-
-        padding-left: 52px;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: -10px;
-            left: 0;
-
-            width: 40px;
-            height: 40px;
-            background: url("./../img/yan-last.png") 0 0 / contain no-repeat;
-        }
     }
 }
 
@@ -224,6 +216,22 @@
 
 @media (max-width: 425px) {
     .completed {
+        &__column {
+            flex: 0 1 100%;
+        }
+
+        &__subheading {
+            font-size: 20px;
+
+            &::before {
+                top: 4px;
+            }
+
+            &::after {
+                top: 4px;
+            }
+        }
+
         &__wrap-company {
             flex-direction: column;
         }
